@@ -1,5 +1,5 @@
 ---
-  - hosts: all
+  - hosts: node1
     become: yes
     name: Installing apache on slave1
     tasks:
