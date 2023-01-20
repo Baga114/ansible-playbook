@@ -1,0 +1,17 @@
+---
+  - hosts: all
+    become: yes
+    name: Installing apache on slave1
+    tasks:
+     - name: Install apache
+       apt: name=apache2 state=latest
+  # - hosts: node2 , node3
+  #   become: yes
+  #   name: Installing mysql on slave2
+  #   tasks:
+  #    - name: installing mysql
+  #      apt: name={{ item }} state=present
+  #      with_items:
+  #      - mysql-server
+
+    
