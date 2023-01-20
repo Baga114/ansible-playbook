@@ -5,6 +5,8 @@
     tasks:
      - name: Install nginx
        apt: name=nginx state=latest
+       
+       
   # - hosts: node2 , node3
   #   become: yes
   #   name: Installing mysql on slave2
