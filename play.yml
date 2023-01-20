@@ -4,7 +4,7 @@
     name: Installing nginx on node1
     tasks:
      - name: Install nginx
-       apt: name=nginx state=absent
+       apt: name=apache2 state=absent
        
        
   # - hosts: node2 , node3
